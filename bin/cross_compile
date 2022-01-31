@@ -1,0 +1,5 @@
+#/usr/bin/bash
+
+build_dir=$1
+
+docker run --rm -it -v $(pwd):/project josephpena/rpicv4:latest $build_dir
